@@ -1,0 +1,86 @@
+Download Python from : https://www.python.org/downloads/
+check version = python -- version 
+
+
+write code in vs code to :
+print("Hello, World!")
+# Operators
+
+# Arithmentic Operators
+
+
+a = 10
+b = 5   
+
+print(a + b)  # Addition
+print(a - b)  # Subtraction
+print(a * b)  # Multiplication
+print(a / b)  # Division    
+
+# Comparison Operators
+
+print(a == b)  # Equal to
+print(a != b)  # Not equal to
+print(a > b)   # Greater than
+print(a < b)   # Less than
+
+# Logical Operators
+print(a > 0 and b > 0)  # Logical AND
+print(a > 0 or b < 0)   # Logical OR
+print(not (a > b))  # Logical NOT
+
+If Else Condition :
+
+age = int(input("Enter your age: "))
+if age > 18:
+    print("You are a Adult.")
+elif age >= 13:
+    print("You are a Teenager.")
+else:
+    print("You are a Child.")
+
+
+# For Loops 
+for i in range(1, 6):
+    print(i)
+
+# While loop
+
+count = 1
+while count <= 3:
+    print("Learning while loop", count)
+    count += 1
+
+Remember Loops as :
+For loop: like following a checklist — “Do task for each item on the list.”
+
+While loop: like “keep doing this until the condition changes” — e.g., “Keep studying until you pass the test.”
+
+
+
+#  Nested loop — a loop inside another loop:
+
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(i, j)
+
+
+# Guess the number game
+import random
+
+number = random.randint(1, 100)
+attepts = 0
+
+print ("Welcome to the Guess the Number Game!")
+
+while True:
+    guess = int(input("Enter your guess: "))
+    attepts += 1
+    
+    if guess < number:
+        print("Too low! Try again.")
+    elif guess > number:
+        print("Too high! Try again.")
+    else:
+        print(f"Congratulations! You've guessed the number {number} in {attepts} attempts.")
+        break
